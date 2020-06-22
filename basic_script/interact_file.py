@@ -1,5 +1,7 @@
+xmen_base_txt = 'xmen_base.txt'
+
 # Opening and Reading a File
-xmen_file = open('xmen_base.txt', 'r')
+xmen_file = open(xmen_base_txt, 'r')
 print(xmen_file)
 print(xmen_file.read())
 print(xmen_file.read())
@@ -13,7 +15,7 @@ for line in xmen_file:
 xmen_file.close()
 
 # Creating a New File and Writing to It
-xmen_base = open('xmen_base.txt')
+xmen_base = open(xmen_base_txt)
 new_xmen = open('new_xmen.txt', 'w')
 new_xmen.write(xmen_base.read())
 new_xmen.close()
@@ -27,10 +29,10 @@ print(new_xmen.read())
 
 # Appending to a File
 xmen_file.close()
-with open('xmen_base.txt', 'a') as f:
+with open(xmen_base_txt, 'a') as f:
     f.write('Professor Xavier\n')
 
-f = open('xmen_base.txt', 'a')
+f = open(xmen_base_txt, 'a')
 with f:
     f.write("Something\n")
 
