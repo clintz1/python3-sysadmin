@@ -3,7 +3,7 @@ import sys
 path = "\\".join(sys.path[0].split('\\\\')[:-1])
 sys.path.append(path)
 
-# Writing Our First Tests
+# Writing Our Tests
 import pytest
 from pgbackup import cli
 
